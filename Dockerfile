@@ -11,7 +11,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get autoremove -y && apt-get aut
 
 RUN apt-get install -y git
 
-RUN pip install pipenv
+RUN pip install --upgrade pip setuptools pipenv
 COPY Pipfile ./
 COPY Pipfile.lock ./
 RUN set -ex && pipenv install --system --dev --skip-lock
