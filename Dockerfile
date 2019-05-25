@@ -65,8 +65,6 @@ RUN jupyter nbextension enable highlight_selected_word/main
 RUN jupyter nbextension enable freeze/main
 RUN jupyter nbextension enable snippets/main
 RUN jupyter nbextension enable snippets_menu/main
-RUN jupyter nbextension enable tree-filter/index
-RUN jupyter nbextension enable ruler/edit
 RUN jupyter nbextension enable vim_binding/vim_binding
 
 RUN set -ex && mkdir /workspace
